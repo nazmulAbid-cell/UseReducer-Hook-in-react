@@ -5,6 +5,8 @@ function UseReducer2() {
         switch(action.type){
             case 'increment':
                 return {count: state.count + 1, showModal: state.showModal}
+                //if initial state is an object tfhen you fhave to return an object 
+                // 
             case 'toggleshowModal':
                 return  {count: state.count, showModal: !state.showModal}
             default:
